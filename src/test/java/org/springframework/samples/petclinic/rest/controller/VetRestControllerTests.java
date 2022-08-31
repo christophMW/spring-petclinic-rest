@@ -101,7 +101,7 @@ class VetRestControllerTests {
             .andExpect(status().isOk())
             .andExpect(content().contentType("application/json"))
             .andExpect(jsonPath("$.id").value(1))
-            .andExpect(jsonPath("$.firstName").value("James"));
+            .andExpect(jsonPath("$.firstName").value("Jonas"));
     }
 
     @Test
